@@ -2,7 +2,7 @@ version: '3'
 
 services:
   fastapi:
-    image: XXXXXXXXX.dkr.ecr.${AWS_REGION}.amazonaws.com/study01-fastapi-${APPLICATION_ENV}
+    image: 929856969072.dkr.ecr.${AWS_REGION}.amazonaws.com/study01-fastapi-${APPLICATION_ENV}
     build:
       dockerfile: ./scripts/fastapi/Dockerfile
       context: ./
