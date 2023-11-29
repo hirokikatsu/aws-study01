@@ -14,6 +14,7 @@ from db import MainSessionLocal, ReplicationSessionLocals
 is_local: Final[bool] = os.getenv("ENV") == "local"
 
 
+
 async def get_main_db_session(x_authorization: str | None = Header(default=None)) -> AsyncGenerator:
     try:
         async with MainSessionLocal() as session:  # type: ignore
